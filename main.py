@@ -11,12 +11,12 @@ def main():
     """
 
     total = num_males + num_females
-    m_perc = total * float(num_males) / 100
-    f_perc = total * float(num_females) / 100
+    m_perc = total * num_males / 100
+    f_perc = total * num_females / 100
 
     print(f'Total number of students: {total}')
     print(f"Total number of males: {num_males} Total number of females: {num_females}")
-    print(f"Total number of males: {m_perc:.2f} Total number of females: {f_perc:.2f}")
+    print(f"Total number of males: \t {m_perc:.2f} Total number of females: \t {f_perc:.2f}")
 
 
     """
