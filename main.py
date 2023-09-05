@@ -1,7 +1,7 @@
 def main():
 
-    num_males = int(input('Enter number of males: '))
-    num_females = int(input('Enter number of females: '))
+    num_males = float(input('Enter number of males: '))
+    num_females = float(input('Enter number of females: '))
 
     """
     ##################################################
@@ -11,14 +11,12 @@ def main():
     """
 
     total = num_males + num_females
-    m_perc = total / float(num_males) 
-    f_perc = total / float(num_females) 
+    m_perc = total - num_males 
+    f_perc = total - num_females 
 
     print(f'Total number of students: {total}')
-    print(f"Total number of males: {num_males} ") 
-    print(f"Total number of females: {num_females}")
-    print(f"Total number of males: \t {m_perc:.2f}")
-    print(f"Total number of females: \t {f_perc:.2f}")
+    print(f'Total percentage of males: \t {m_perc:.2f}')
+    print(f'Total percentage of females: \t {f_perc:.2f}')
 
 
     """
